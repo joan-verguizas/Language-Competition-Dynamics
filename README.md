@@ -18,10 +18,13 @@ Once the initial state is set, we iterate over a number of epochs, each consisti
 We define two models for this task:
 
 1. Abrams-Strogatz Model: This model assumes that agents belong to one of two languages (A or B). The transition probabilities are:
+
    $$ p_{i, A \rightarrow B} = \frac{1}{2} \sigma_i^B \qquad p_{i, B \rightarrow A} = \frac{1}{2} \sigma_i^A $$
 
-2. Bilingual Model: This model assumes the existence of bilingual agents (AB). The transition probabilities are:
+3. Bilingual Model: This model assumes the existence of bilingual agents (AB). The transition probabilities are:
+
    $$ p_{i, A \rightarrow AB} = \frac{1}{2} \sigma_i^B \qquad p_{i, B \rightarrow AB} = \frac{1}{2} \sigma_i^A $$
+
    $$ p_{i, AB \rightarrow B} = \frac{1}{2} (1 - \sigma_i^A) \qquad p_{i, AB \rightarrow A} = \frac{1}{2} (1 - \sigma_i^B) $$
 
 As observed, as the number of epochs increases, spatial domains of each monolingual community form and grow. Bilingual communities never form fully but exist as a narrow band between the two monolingual domains.
