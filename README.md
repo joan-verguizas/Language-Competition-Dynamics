@@ -5,6 +5,8 @@
 
 ## Overview
 
+$$ p_{i, A \rightarrow B} = \frac{1}{2} \sigma_i^B \qquad p_{i, B \rightarrow A} = \frac{1}{2} \sigma_i^A $$
+
 This project was developed as part of the final exam for the Physics of Complex Network course during the academic year 2022-2023. The work was carried out individually during my first year in the Master's degree program in Physics of Data at the University of Padova. The goal of the project was to study the dynamics of language competition that arise between languages in a bilingual community. We will simulate the competition between two languages and study how outcomes change with varying parameters and model topologies.
 
 ## Model Description
@@ -19,7 +21,6 @@ We define two models for this task:
 
 1. Abrams-Strogatz Model: This model assumes that agents belong to one of two languages (A or B). The transition probabilities are:
 
-   $$ p_{i, A \rightarrow B} = \frac{1}{2} \sigma_i^B \qquad p_{i, B \rightarrow A} = \frac{1}{2} \sigma_i^A $$
 
    $$ p_{i, A \rightarrow B} = \frac{1}{2} \sigma_i^B \qquad p_{i, B \rightarrow A} = \frac{1}{2} \sigma_i^A $$
 
