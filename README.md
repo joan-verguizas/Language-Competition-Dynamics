@@ -9,8 +9,6 @@ This project was developed as part of the final exam for the Physics of Complex 
 
 ## Model Description
 
-In today's interconnected world, languages no longer have the natural or political borders that once separated them. This has led to the spread of languages beyond their places of origin, giving rise to bilingual communities. Within these communities, the coexistence of languages leads to a dynamic in which they compete for dominance in everyday communication.
-
 To simulate language competition, we use a lattice-like structure with $N = L \times L$ nodes, where each node represents an agent (speaker) in the bilingual community. Each node is initialized randomly with an equal probability of belonging to different linguistic communities.
 
 Once the initial state is set, we iterate over a number of epochs, each consisting of selecting a random node $i$ from the lattice. We compute the local densities $\sigma_i$ of each linguistic community in the neighborhood of agent $i$. Based on these local densities, the agent's transition probabilities between linguistic communities are calculated. By sampling a random number using these probabilities, we determine the linguistic community of the agent.
@@ -25,7 +23,7 @@ $$ p_{i, A \rightarrow B} = \frac{1}{2} \sigma_i^B \qquad p_{i, B \rightarrow A}
 
 $$ p_{i, A \rightarrow AB} = \frac{1}{2} \sigma_i^B \qquad p_{i, B \rightarrow AB} = \frac{1}{2} \sigma_i^A \qquad p_{i, AB \rightarrow B} = \frac{1}{2} (1 - \sigma_i^A) \qquad p_{i, AB \rightarrow A} = \frac{1}{2} (1 - \sigma_i^B) $$
 
-As observed, as the number of epochs increases, spatial domains of each monolingual community form and grow. Bilingual communities never form fully but exist as a narrow band between the two monolingual domains.
+As the number of epochs increases, spatial domains of each monolingual community form and grow. Bilingual communities never form fully but exist as a narrow band between the two monolingual domains.
 
 ## Model Analysis
 
@@ -35,15 +33,11 @@ We analyze how increasing the lattice size affects the time to reach extinction.
 
 ### Changing the Topology
 
-We introduce a small-world (Watts-Strogatz) topology to observe the effect of social structure. This introduces a rewiring probability $p$, determining how likely an edge endpoint changes.
-
-In the Bilingual model, a small-world topology produces rapid extinction of one monolingual community. However, changing $p$ has a small effect in the Abrams-Strogatz model.
+We introduce a small-world (Watts-Strogatz) topology to observe the effect of social structure. This introduces a rewiring probability $p$, determining how likely an edge endpoint changes. In the Bilingual model, a small-world topology produces rapid extinction of one monolingual community. However, changing $p$ has a small effect in the Abrams-Strogatz model.
 
 ### Community Structure Topology
 
-We also introduce a community structure topology. This structure is created by a process of random attachment and search for new contacts, repeated for multiple iterations. Below is the degree distribution depending on the number of iterations:
-
-A community structure topology seems to make the model converge slower, except in the Bilingual case, where more connections lead to faster convergence due to network saturation.
+We also introduce a community structure topology. This structure is created by a process of random attachment and search for new contacts, repeated for multiple iterations. A community structure topology seems to make the model converge slower, except in the Bilingual case, where more connections lead to faster convergence due to network saturation.
 
 ### Prestige and Volatility
 
@@ -66,8 +60,6 @@ We fit this model to data on Welsh in Wales, Irish in Ireland, and Gaelic Scotti
 | Welsh            | 0.453          | 1.245            |
 | Irish            | 0.898          | 1.274            |
 | Gaelic Scottish  | 0.296          | 0.950            |
-
-### Evolution of Languages Over Time
 
 ## Conclusion
 
