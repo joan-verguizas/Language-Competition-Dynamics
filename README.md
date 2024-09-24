@@ -21,6 +21,8 @@ We define two models for this task:
 
    $$ p_{i, A \rightarrow B} = \frac{1}{2} \sigma_i^B \qquad p_{i, B \rightarrow A} = \frac{1}{2} \sigma_i^A $$
 
+   $$ p_{i, A \rightarrow B} = \frac{1}{2} \sigma_i^B \qquad p_{i, B \rightarrow A} = \frac{1}{2} \sigma_i^A $$
+
 3. Bilingual Model: This model assumes the existence of bilingual agents (AB). The transition probabilities are:
 
    $$ p_{i, A \rightarrow AB} = \frac{1}{2} \sigma_i^B \qquad p_{i, B \rightarrow AB} = \frac{1}{2} \sigma_i^A $$
