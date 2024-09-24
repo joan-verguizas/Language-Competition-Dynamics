@@ -5,6 +5,8 @@
 
 ## Overview
 
+$$ A \alpha$$
+
 This project was developed as part of the final exam for the Physics of Complex Network course during the academic year 2022-2023. The work was carried out individually during my first year in the Master's degree program in Physics of Data at the University of Padova. The goal of the project was to study the dynamics of language competition that arise between languages in a bilingual community. We will simulate the competition between two languages and study how outcomes change with varying parameters and model topologies.
 
 ## Model Description
